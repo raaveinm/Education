@@ -10,17 +10,21 @@ import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun EditNumberField (
     modifier: Modifier = Modifier,
-    text: String,
+    text: String = "",
     icon: ImageVector? = Icons.Default.Refresh,
     label: String = "",
-    onValueChange: (String) -> Unit
+    hint: String = "",
+    onValueChange: (String) -> Unit,
+    action: ImeAction
 ) {
     Row(
         modifier = modifier,
@@ -31,18 +35,24 @@ fun EditNumberField (
             value = text,
             onValueChange = { onValueChange(it) },
             label = { Text(text = label) },
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            keyboardOptions = KeyboardOptions.Default.copy(
+                keyboardType = KeyboardType.Number,
+                imeAction = action
+            ),
             singleLine = true,
-            leadingIcon = { icon?.let { Icon(imageVector = it, contentDescription = null) } }
+            leadingIcon = { icon?.let { Icon(imageVector = it, contentDescription = null) } },
+            placeholder = { Text(text = hint) },
         )
     }
 }
 
 @Preview
 @Composable
-fun preview () {
+fun Preview () {
     EditNumberField(
         onValueChange = {},
-        text = "Jojo"
+        hint = "12",
+        label = "Bill Amount",
+        action = ImeAction.Next
     )
 }
