@@ -1,5 +1,6 @@
 package com.raaveinm.learning.ui.viewmodel
 
+import androidx.annotation.VisibleForTesting
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -20,7 +21,8 @@ class TipCalculatorViewModel : ViewModel() {
         }
     }
 
-    private fun calculateTip(billAmount: Double, tipPercentage: Double) : String {
+    @VisibleForTesting
+    internal fun calculateTip(billAmount: Double, tipPercentage: Double) : String {
         var calculatedTip = tipPercentage / 100 * billAmount
         if (roundUp.value) calculatedTip = kotlin.math.ceil(calculatedTip)
         return NumberFormat.getCurrencyInstance().format(calculatedTip)
