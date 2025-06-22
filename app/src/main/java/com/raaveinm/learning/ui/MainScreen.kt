@@ -5,11 +5,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.raaveinm.learning.ui.screen.TipCalculatorScreen
+import com.raaveinm.learning.ui.layouts.CardGrid
 
 @Composable
 fun MainScreen () {
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-        TipCalculatorScreen(modifier = Modifier.padding(innerPadding))
+        CardGrid(modifier = Modifier.padding(innerPadding))
     }
 }
