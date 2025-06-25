@@ -1,29 +1,50 @@
 package com.raaveinm.learning.ui
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.dimensionResource
-import com.raaveinm.learning.R
-import com.raaveinm.learning.data.dogs
-import com.raaveinm.learning.ui.layouts.DogItem
-import com.raaveinm.learning.ui.layouts.WoofTopAppBar
+import androidx.navigation.compose.composable
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
+import com.raaveinm.learning.data.coffees
+import com.raaveinm.learning.ui.layouts.AllRecipes
+import com.raaveinm.learning.ui.layouts.FullScreenImage
+import com.raaveinm.learning.ui.layouts.RecipeExtended
+import com.raaveinm.learning.ui.navigation.DetailedImage
+import com.raaveinm.learning.ui.navigation.MainScreen
+import com.raaveinm.learning.ui.navigation.RecipeScreen
 
 @Composable
-fun MainScreen () {
+fun MainScreen (
+    navController: NavHostController = rememberNavController()
+) {
     Scaffold(
-        topBar = { WoofTopAppBar() },
         modifier = Modifier
-    ) { it ->
-        LazyColumn(contentPadding = it) {
-            items(dogs) { dog ->
-                DogItem(
-                    dog = dog,
-                    modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
-                )
+    ) { innerPadding ->
+        NavHost(navController, startDestination = MainScreen) {
+            composable<MainScreen> {
+                AllRecipes(navController, modifier = Modifier.padding(innerPadding))
+            }
+
+            composable<RecipeScreen> { backStackEntry ->
+                val recipeScreen: RecipeScreen = backStackEntry.toRoute()
+                val selectedCoffee = coffees.find { it.name == recipeScreen.coffeeNameId }
+
+                if (selectedCoffee != null) {
+                    RecipeExtended(
+                        coffee = selectedCoffee,
+                        navController = navController
+                    )
+                }
+            }
+
+            composable<DetailedImage> { backStackEntry ->
+                val detailedImage: DetailedImage = backStackEntry.toRoute()
+                val selectedCoffee = coffees.find { it.imageResourceId == detailedImage.coffeeImage }
+                if (selectedCoffee != null) { FullScreenImage(image = selectedCoffee.imageResourceId) }
             }
         }
     }

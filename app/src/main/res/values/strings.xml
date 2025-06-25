@@ -1,25 +1,70 @@
 <resources>
-    <string name="app_name">Furry WooF</string>
+    <string name="app_name">Coffee Completed</string>
 
-    <string name="dog_name_1">Koda</string>
-    <string name="dog_name_2">Lola</string>
-    <string name="dog_name_3">Frankie</string>
-    <string name="dog_name_4">Nox</string>
-    <string name="dog_name_5">Faye</string>
-    <string name="dog_name_6">Bella</string>
-    <string name="dog_name_7">Moana</string>
-    <string name="dog_name_8">Tzeitel</string>
-    <string name="dog_name_9">Leroy</string>
-    <string name="dog_description_1"></string>
-    <string name="dog_description_2"></string>
-    <string name="dog_description_3"></string>
-    <string name="dog_description_4"></string>
-    <string name="dog_description_5"></string>
-    <string name="dog_description_6">Chasing sea foam</string>
-    <string name="dog_description_7">Bothering her paw-rents</string>
-    <string name="dog_description_8"></string>
-    <string name="dog_description_9">Sleeping in dangerous places</string>
-    <string name="about">About:</string>
-    <string name="years_old">%d years old</string>
-    <string name="expand_button_content_description">See more or less information .</string>
+    <string name="latte">Café Latte</string>
+    <string name="vietnamese_iced_latte">Vietnamese Iced Latte</string>
+    <string name="espresso_mudslide">Espresso Mudslide</string>
+    <string name="cortado">Cortado</string>
+    <string name="flat_white">Flat White</string>
+
+    <string name="latte_description">The classic coffee shop beverage made simple at home,
+        just steam your milk andpour over your freshly brewed espresso and top with a thin
+        layer of foam.
+    </string>
+    <string name="vietnamese_iced_latte_description">
+        Sweetened condensed milk provides a pleasant sweetness to the espresso in this iced beverage.
+    </string>
+    <string name="espresso_mudslide_description">
+    Espresso gives this sweet cocktail a nice jolt. Blending this cocktail with vanilla ice cream
+    makes a decadent adult milkshake.
+    </string>
+    <string name="cortado_description">
+        A cortado is similar to a latte, but instead of being heavy on milk, it uses equal parts
+        espresso and milk and has no foam on top.
+    </string>
+    <string name="flat_white_description">A simple way to describe this increasingly popular coffee
+        shop drink would be “a small strong latte.” It typically has a higher proportion of espresso
+        to milk and slightly less foam than a latte.
+    </string>
+
+    <string name="latte_recipe">
+        Put the espresso capsule into the unit.
+        Put the milk into a heatproof mug. Hold the mug in one hand and place under
+        the steam wand so the bottom of the wand is just below the surface of the milk
+        at an angle. Select the Steam function and press the START/STOP knob to start steaming.
+        While holding the mug at an angle, allow the steam to move the milk around. Once the milk
+        begins to increase in volume, lift the mug up higher so the steam wand immerses deeper
+        into the milk (this will prevent large bubbles from forming and will make a nice fine
+        milk foam). When the foam has almost reached the top of the mug and you can feel that
+        the milk in the mug is quite hot, press the START/STOP knob to stop steaming. Tap the
+        mug a few times to remove any larger bubbles.Place one mug underneath the brew head
+        and select Single Espresso. Once the espresso has finished brewing, slowly pour the
+        steamed milk into the mug with the espresso.
+    </string>
+    <string name="vietnamese_iced_latte_recipe">
+        Put the sweetened condensed milk into a mug or glass. Brew two double espressos over the
+        condensed milk using the Cold Extraction setting. When brewing is complete, stir until
+        combined.Fill a highball glass with ice. Pour the latte over the ice.
+    </string>
+    <string name="espresso_mudslide_recipe">
+        Drizzle chocolate syrup inside the walls of two glasses and fll with ice.Put the espresso,
+        Irish cream, vodka, and cofee liqueur into a cocktail shaker filled with ice. Shake
+        vigorously and pour through a strainer* into the prepared glasses.
+    </string>
+    <string name="cortado_recipe">
+        Brew a single espresso into a small heatproof cup. Put the milk into the Frothing Pitcher.
+        If using the EM-160, turn the Steam/Hot Water Knob to the ON position and press the STEAM
+        button. Using the Steam/Hot Water Wand, steam the milk until the foam has almost reached
+        the top of the pitcher and you can feel that the milk is quite hot. Tap the pitcher a few
+        times to remove any larger bubbles. Slowly pour 1½ to 2 ounces of the steamed milk into the
+        mug with the espresso.
+    </string>
+    <string name="flat_white_recipe">Preparation Brew a double espresso into a heatproof mug. Put
+        the milk into the frothing pitcher. If using the EM-160, turn the Steam/Hot Water Knob to
+        the ON position and press the STEAM button. Using the steaming wand, steam the milk until
+        the foam has reached two-thirds of the way up the pitcher and you can feel that the milk is
+        quite hot. Tap the pitcher a few times to remove any larger bubbles. Slowly pour a small
+        amount of the steamed milk, about half the volume of the espresso, into the mug with the
+        espresso, holding back the foam with a spoon. Top with a very thin layer of foam.
+    </string>
 </resources>
