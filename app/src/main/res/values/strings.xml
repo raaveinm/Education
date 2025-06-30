@@ -6,6 +6,11 @@
     <string name="espresso_mudslide">Espresso Mudslide</string>
     <string name="cortado">Cortado</string>
     <string name="flat_white">Flat White</string>
+    <string name="hazelnut_mocha_latte">Hazelnut Mocha Latte</string>
+    <string name="golden_milk_latte">Golden Milk Latte</string>
+    <string name="cafe_au_lait">Café au Lait</string>
+    <string name="americano">Americano</string>
+    <string name="cappuccino">Cappuccino</string>
 
     <string name="latte_description">The classic coffee shop beverage made simple at home,
         just steam your milk andpour over your freshly brewed espresso and top with a thin
@@ -25,6 +30,24 @@
     <string name="flat_white_description">A simple way to describe this increasingly popular coffee
         shop drink would be “a small strong latte.” It typically has a higher proportion of espresso
         to milk and slightly less foam than a latte.
+    </string>
+    <string name="hazelnut_mocha_latte_description">
+        Start your morning with a little indulgence.
+    </string>
+    <string name="golden_milk_latte_description">
+        There are many benefits to turmeric, and there’s no better way to have it than in a warm latte.
+    </string>
+    <string name="cafe_au_lait_description">
+        Translated from French as “coffee with milk,” this simple beverage calls for equal parts
+        coffee and steamed milk. Here, we use espresso in place of drip coffee to give some extra favor.
+    </string>
+    <string name="americano_description">
+        Simply stated, an Americano is an espresso with extra hot water. It’s a great halfway point
+        between the assertive favor of an espresso and a full cup of coffee.
+    </string>
+    <string name="cappuccino_description">
+        A thick layer of foam and bit of milk let the boldness of the coffee shine through in this
+        popular drink.
     </string>
 
     <string name="latte_recipe">
@@ -60,11 +83,43 @@
         mug with the espresso.
     </string>
     <string name="flat_white_recipe">Preparation Brew a double espresso into a heatproof mug. Put
-        the milk into the frothing pitcher. If using the EM-160, turn the Steam/Hot Water Knob to
+        the milk into the frothing pitcher. If using the coffee machine, turn the Steam/Hot Water Knob to
         the ON position and press the STEAM button. Using the steaming wand, steam the milk until
         the foam has reached two-thirds of the way up the pitcher and you can feel that the milk is
         quite hot. Tap the pitcher a few times to remove any larger bubbles. Slowly pour a small
         amount of the steamed milk, about half the volume of the espresso, into the mug with the
         espresso, holding back the foam with a spoon. Top with a very thin layer of foam.
+    </string>
+    <string name="hazelnut_mocha_latte_recipe">
+        In a small bowl, whisk together the milk and chocolate hazelnut spread. Set aside. Brew
+        a double espresso into a heatproof mug. Put the chocolate hazelnut milk into the frothing
+        pitcher. Using the steaming wand, steam the milk until the foam has almost reached the top
+        of the pitcher and you can feel that the milk is quite hot. Tap the pitcher a few times to
+        remove any larger bubbles. Slowly pour the steamed milk into the mug.
+    </string>
+    <string name="golden_milk_latte_recipe">
+        Brew a single espresso into a heatproof mug.Put the milk, honey, vanilla, and spices into
+        the frothing pitcher. Using the steaming wand, steam the milk until the foam has almost
+        reached the top of the pitcher and you can feel that the milk is quite hot. Tap the pitcher
+        a few times to remove any larger bubbles. Slowly pour the steamed milk mixture into the mug
+        with the espresso.
+    </string>
+    <string name="cafe_au_lait_recipe">
+        Brew a double espresso into a heatproof mug.
+        Put the milk into the Frothing Pitcher. If using the coffee machine, turn the Steam/Hot Water Knob to
+        the ON position and press the STEAM button. Using the Steam/Hot Water Wand, steam the milk
+        until the foam has almost reached the top of the pitcher and you can feel that the milk is
+        quite hot. Tap the pitcher a few times to remove any larger bubbles. Slowly pour all of the
+        milk, holding back the foam, into the mug with the espresso.
+    </string>
+    <string name="americano_recipe">
+        Brew a double espresso into a heatproof mug. If using coffee machine, turn the Steam/Hot Water
+        Knob to the ON position Using the Steam/Hot Water Wand, brew hot water on top of the espresso.
+    </string>
+    <string name="cappuccino_recipe">
+         With the frothing whisk in place, add the milk to the tank. Cover and press the hot milk
+        button. 2. Pour espresso into a mug. 3. When the frothing process is complete, pour the
+        milk into the espresso, using a spoon to hold back the foam. Top with 2 to 3 tablespoons of
+        the foam. Serve immediately.
     </string>
 </resources>
