@@ -62,4 +62,8 @@ dependencies {
     implementation (libs.androidx.material.icons.extended)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.navigation.compose)
+
+    // other dependencies
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.7")
+
 }
